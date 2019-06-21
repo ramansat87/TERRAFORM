@@ -2,7 +2,7 @@
 resource "azurerm_resource_group" "rg" 
 {
 		name 		= "Test_Zone"
-		Location 	= "southindia"
+		location 	= "southindia"
 	tags = {
 	Environment = "Development"
 	Users		= "Test_Users"
