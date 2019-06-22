@@ -42,7 +42,7 @@ address_prefix 		= "10.0.1.0/24"
 }		
 	
 #create a network nic
-resource "azurerm_network_interface" "nicname"{
+resource "azurerm_network_interface" "nicname" {
 		name 		        = "Test_Nic"
         location 	        = "${azurerm_resource_group.rg.location}"
 		resource_group_name = "${"azurerm_resource_group.rg.name}"
@@ -50,7 +50,7 @@ resource "azurerm_network_interface" "nicname"{
 	ip_configuration {
 					name              = "Test_IP"
 				subnet_id             = "${azurerm_subnet.snet.id}"
-	private_ip_address_allocation     = "dynamic"			
+	private_ip_address_allocation     = "Dynamic"			
                      }
 }					 
 	        
