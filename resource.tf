@@ -4,7 +4,7 @@ resource "azurerm_resource_group" "rg"{
 		location 	= "southindia"
 	tags = {
 	Environment = "Development"
-	Users		= "Test_Users"
+	Users	    = "Test_Users"
 		}	
 }
 
