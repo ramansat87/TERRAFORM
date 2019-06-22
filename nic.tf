@@ -42,7 +42,7 @@ address_prefix 		= "10.0.1.0/24"
 }		
 	
 #create a network nic
-resource "azurerm_network_interface" {
+resource "azurerm_network_interface" "nicname"{
 		name 		        = "Test_Nic"
         location 	        = "${azurerm_resource_group.rg.location}"
 		resource_group_name = "${"azurerm_resource_group.rg.name}"
